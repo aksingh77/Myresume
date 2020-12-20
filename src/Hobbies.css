@@ -1,0 +1,24 @@
+.hobbies i {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+.hobbies:nth-child(even) {
+    margin-left: 6px;
+}
+.hobbies:nth-child(odd) {
+    margin-right: 6px;
+}
+.hobbies {
+    width: calc(100% - 59%);
+    float: left;
+    text-align: center;
+    padding: 22px 4px;
+    border: 2.4px solid;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+p.view_mode {
+    width: 10px;
+    height: 10px;
+    background: gray;
+}

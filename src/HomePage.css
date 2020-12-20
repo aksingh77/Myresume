@@ -1,0 +1,81 @@
+.homepage{
+    width: calc(100% - 600px);
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex; 
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+
+}
+
+.homepage_bg_color{
+    background: purple;
+    padding-top: 1rem;
+}
+p.homepage_detail_content {
+    margin-top: 1.4rem;
+}
+.left_side { 
+    flex: .3;
+    padding: 1rem;
+    background: #dfdada;
+    /* background: linear-gradient(to right, #9f8f8f ,#9b5c5c 50%);  */
+   /* background:repeating-radial-gradient( circle at 107px -63px, #705c5c ,#ac9090 113px); */
+}
+.right_side { 
+    flex: .7; 
+}
+.homepage_img {
+    height: 234px;
+    display: flex;
+    align-items: center;
+}
+.homepage_img img {
+    width: 63%;
+    display: flex; 
+    margin: 0 auto;
+}
+.homepage_detail {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.7rem;
+    background:#dfdada;
+    justify-content: center;
+    /* background: linear-gradient(to top, #9f8f8f ,#9b5c5c 50%); */
+    /* background: repeating-radial-gradient( circle at 0 0, #705c5c ,#ac9090 113px); */
+}
+.homepage_detail h4 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
+.homepage_detail_profile {
+    font-size: .9rem;
+    letter-spacing: 1.9px;
+    font-weight: 600;
+}
+
+.skill {
+    width: 47%;
+    float: left;
+    text-align: center; 
+    margin-bottom: 10px; 
+    border-radius: 10px;
+    background: #fff;
+}
+.skill:nth-child(odd) {
+    margin-left: 5px;
+}
+.skill:nth-child(even) {
+    margin-right: 5px;
+}
+.homepage_skill, .homepage_hobbis {
+    display: flex;
+}
+.homepage_media{
+    display: none;
+}
+
+.hobies{width: 100%;}

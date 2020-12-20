@@ -1,0 +1,87 @@
+.experience_heading p {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: right;
+    margin: 0;
+    letter-spacing: 1.9px;
+    position: relative;
+    /* width: 94%; */
+    display: inline;
+}
+
+.experience_heading {
+    text-align: right;
+}
+
+.experience_heading p:after {
+    width: 40%;
+    content: '';
+    /* position: relative; */
+    height: 2.4px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+}
+.experience {
+    padding: 1.4rem;
+    margin-top: 1rem;
+}
+.e_detail {
+    display: flex;
+    padding-top: 1.9rem;
+}
+.e_time { 
+    flex: .24;
+}
+.e_details p {
+    margin: 0;
+}
+.e_details {
+    flex: .76;
+    position: relative;
+    padding-left: 10px;
+}
+.e_details:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+    top: 0;
+    left: -1rem;
+}
+.e_details:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 90%;
+    background: #000; 
+    top: 0;
+    left: -12px;
+}
+p.e_detail_coName {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.9px;
+    font-weight: 700;
+    padding-bottom: 3px;
+}
+
+p.e_detail_content {
+    font-size: .9rem;
+    padding-bottom: .9rem;
+}
+p.e_detail_work {
+    margin: 0;
+    font-weight: 600;
+}
+.show_project {
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding-top: 1rem;
+}

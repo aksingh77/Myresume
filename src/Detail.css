@@ -1,0 +1,58 @@
+.ak {
+    width: 100%;
+}
+.Contact_heading p {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: right;
+    margin: 0;
+    letter-spacing: 1.9px;
+    position: relative;
+    
+    margin-top: 1rem;
+    display: inline;
+}
+.Contact_heading {
+    text-align: right;
+    margin-bottom: 1.9rem;
+    margin-top: 1.9rem;
+
+}
+.detail {
+    display: flex;
+    padding-bottom: 10px;
+}
+.detail_icon svg {
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.detail_data {
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.Contact_heading p:after {
+    content: "";
+    position: absolute;
+    width: 54%;
+    right: 0;
+    height: 1.9px;
+    background: black;
+    bottom: -11px;
+}
+.new_detail {
+    padding: 18px 7px;
+}
+.new_detail i {
+    font-size: 1.7rem;
+}
+p.new_data {
+    margin: 0;
+    font-size: 13px;
+    margin-top: 10px;
+}

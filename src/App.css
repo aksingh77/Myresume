@@ -1,0 +1,226 @@
+:root {
+    --blue: #2196f3;
+    --green: #72b626;
+    --orange: #fa5b0f;
+    --pink: #ec1839;
+    --yellow: #ffb400;
+    --gray: #720472;
+    --white:#fff;
+    --dark:#333
+  }
+  a{color: #000; text-decoration: none;}
+/* darkbody */
+.dark .detail_icon svg,.dark .skill { 
+    color: var(--dark); 
+    background: var(--white);
+}
+.dark .hobbies{
+    border-color: var(--dark);   
+}
+.dark .e_details:before,.dark .e_details::after{
+    background-color: var(--dark);
+}
+.dark .left_side {
+    background: var(--dark) !important; 
+}
+.dark .right_side {
+    background: var(--dark) !important;
+    
+}
+.dark .homepage_detail{
+    background: var(--dark) !important; 
+}
+.dark .homepage_detail_profile ,.dark .homepage_detail_content, .dark .detail_data, .dark .e_detail_work, .dark p.e_detail_coName,.dark p.e_detail_detail{
+    color: var(--white) ;
+}
+
+/* .dark .homepage_detail h4{color: var(--white);} */
+
+/* BlueTheme */
+.blue .detail_icon svg,.blue .skill { 
+    background: var(--blue); 
+    color: var(--white);
+}
+.blue .hobbies {
+    border-color: var(--blue);   
+}
+.blue .e_details:before,.blue .e_details::after,.blue .Contact_heading p:after, .blue .experience_heading p:after{
+    background-color: var(--blue);
+}
+.blue .Contact_heading p,.blue .homepage_detail h4,.blue .experience_heading p{
+    color: var(--blue);
+    }
+    .blue p.e_detail_content {
+        color: var(--blue);
+    }
+/* .blue .left_side {
+    background: linear-gradient(to right, #3682be,#2a6493 50%); 
+}
+.blue .homepage_detail{
+    background: linear-gradient(to top,  #3682be,#2a6493 50%); 
+} */
+
+/* greentheme */
+.green .detail_icon svg,.green .skill { 
+    background: var(--green); 
+    color: var(--white);
+}
+.green .hobbies{
+    border-color: var(--green);  
+}
+.green .e_details:before,.green .e_details::after , .green .Contact_heading p:after, .green .experience_heading p:after{
+    background-color: var(--green);
+}
+.green .Contact_heading p,.green .homepage_detail h4,.green .experience_heading p{
+    color: var(--green);
+    }
+    .green  p.e_detail_content {
+        color: var(--green);
+    }
+/* .green .left_side {
+    background: linear-gradient(to right, #5e7446,#41720a  50%); 
+}
+.green .homepage_detail{
+    background: linear-gradient(to top, #5e7446,#41720a 50%); 
+} */
+
+/* OrangeTheme */
+.orange .detail_icon svg,.orange .skill { 
+    background: var(--orange); 
+    color: var(--white);
+}
+.orange .hobbies{
+    border-color: var(--orange);   
+}
+.orange .e_details:before,.orange .e_details::after, .orange .Contact_heading p:after, .orange .experience_heading p:after{
+    background-color: var(--orange);
+}
+.orange .Contact_heading p,.orange .homepage_detail h4,.orange .experience_heading p{
+    color: var(--orange);
+    }
+    .orange  p.e_detail_content {
+        color: var(--orange);
+    }
+/* .orange .left_side {
+    background: linear-gradient(to right, #3682be,#2a6493 50%); 
+}
+.orange .homepage_detail{
+    background: linear-gradient(to top,  #3682be,#2a6493 50%); 
+} */
+
+ 
+/* PinkTheme */
+.pink .detail_icon svg,.pink .skill { 
+    background: var(--pink); 
+    color: var(--white);
+}
+.pink .hobbies{
+    border-color: var(--pink);   
+}
+.pink .e_details:before,.pink .e_details::after, .pink .Contact_heading p:after, .pink .experience_heading p:after{
+    background-color: var(--pink);
+}
+.pink .Contact_heading p,.pink .homepage_detail h4,.pink .experience_heading p{
+    color: var(--pink);
+    }
+    .pink p.e_detail_content {
+        color: var(--pink);
+    }
+/* .pink .left_side {
+    background: linear-gradient(to right, #3682be,#2a6493 50%); 
+}
+.pink .homepage_detail{
+    background: linear-gradient(to top,  #3682be,#2a6493 50%); 
+} */
+
+
+
+/* YellowTheme */
+.yellow .detail_icon svg,.yellow .skill { 
+    background: var(--yellow); 
+    color: var(--white);
+}
+.yellow .hobbies{
+    border-color: var(--yellow);   
+}
+.yellow .e_details:before,.yellow .e_details::after, .yellow .Contact_heading p:after, .yellow .experience_heading p:after{
+    background-color: var(--yellow);
+}
+.yellow .Contact_heading p,.yellow .homepage_detail h4,.yellow .experience_heading p{
+    color: var(--yellow);
+    }
+    .yellow p.e_detail_content {
+        color: var(--yellow);
+    }
+/* .yellow .left_side {
+    background: linear-gradient(to right, #3682be,#2a6493 50%); 
+}
+.yellow .homepage_detail{
+    background: linear-gradient(to top,  #3682be,#2a6493 50%); 
+} */
+
+/* GrayTheme */
+.gray .detail_icon svg,.gray .skill { 
+    background: var(--gray); 
+    color: var(--white);
+}
+.gray .hobbies{
+    border-color: var(--gray);   
+}
+.gray .e_details:before,.gray .e_details::after, .gray .Contact_heading p:after, .gray .experience_heading p:after{
+    background-color: var(--gray);
+}
+.gray .Contact_heading p,.gray .homepage_detail h4,.gray .experience_heading p{
+color: var(--gray);
+}
+.gray p.e_detail_content {
+    color: var(--gray);
+}
+/* .gray .left_side {
+    background: linear-gradient(to right, #3682be,#2a6493 50%); 
+}
+.gray .homepage_detail{
+    background: linear-gradient(to top,  #3682be,#2a6493 50%); 
+} */
+
+
+p.music_newList {
+    text-align: right;
+    font-weight: 600;
+}
+@media(max-width:767px){
+    .homepage { 
+        width: 90% !important;
+        flex-direction: column;
+    }
+    .homepage_detail.homepage_media{
+        display: flex;
+        padding: 0;
+    }
+    .homepage_detail.homepage_media h4{
+        font-size: 1.4rem;
+    }
+    .homepage_detail.homepage_desktop{display: none;height: auto;}
+    .homepage_img {
+        height: auto !important;
+    }
+    .homepage_img img {
+        width: 56% !important; 
+    }
+    .Contact_heading p {
+        font-size: 1.1rem !important;
+    }
+    .copy_musci_section .copy_music { 
+        width: 70% !important; 
+        
+    }
+    .copy_musci_section { 
+        width: 100% !important;
+    }
+}
+@media(max-width:1299px){
+    .homepage { 
+        width: 90% !important;
+        
+    }
+}
