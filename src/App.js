@@ -18,6 +18,7 @@ function App() {
             <HomePage />
           </Route>
 
+
           <Route exact path="/music" >
             <Music />
           </Route>
