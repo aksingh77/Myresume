@@ -28,8 +28,10 @@ const HomePage = () => {
     return (
         <div className="homepage_bg_color">
             <div className="homepage">
-                <div className='homepage_color'>
-                    <Color />
+                <div className="homepage_new_color">
+                    <div className='homepage_color'>
+                        <Color />
+                    </div>
                 </div>
                 <div className="left_side">
                     <div className="homepage_img">

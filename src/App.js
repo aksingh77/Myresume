@@ -7,6 +7,8 @@ import { BrowserRouter } from 'react-router-dom';
 import Project from './Component/timeline/projectTimeline/Project';
 import ModuleMusic from './Component/music/musicWithModule/ModuleMusic';
 import CopyMusic from './Component/music/Musiccopycode/CopyMusic'
+import WeatherModuele from './Component/Weather/module/WeatherModule';
+import CustomWeather from './Component/Weather/custome/CustomWeather';
 function App() {
   return (
     <div className="App">
@@ -30,6 +32,12 @@ function App() {
           </Route>
           <Route exact path="/musiccopy" >
             <CopyMusic />
+          </Route>
+          <Route exact path="/moduleweather" >
+            <WeatherModuele />
+          </Route>
+          <Route exact path="/customweatherr" >
+            <CustomWeather />
           </Route>
         </Switch>
       </BrowserRouter>

@@ -1,0 +1,123 @@
+.custom_weather{background: gray;}
+
+.custom_weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.custom_weather_container {
+    background: #6fb3d2;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1.9em;
+   height: 354px;
+   width: 21%;
+
+   overflow: hidden;
+}
+.custom_weather_wavee {
+    position: relative;
+}
+h2.custom_weather_location {
+    font-weight: 400;
+    font-size: 3rem;
+    letter-spacing: 4px;
+    padding: 21px 1px 23px 14px;
+    display: flex;
+    justify-content: center;
+}
+h3.custom_weather_tempminmax {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 7rem;
+}
+
+.custom_weather_input {
+    margin-bottom: 4rem;
+}
+input.custom_weather_inputfield {
+    background: #6fb3d2;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    height: 3rem;
+} 
+.custom_weather_wave {
+    background: #fff;
+    width: 39rem;
+    height: 39rem;
+    margin-left: -11rem;
+    margin-top: -9rem;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 2800ms infinite linear;
+    position: absolute; 
+    z-index: -1;
+    opacity: .1;
+}
+/* .custom_weather_wave .-one{
+
+    animation: drift 500ms infinite linear;
+    z-index: 2 !important;
+    opacity: 0.2;
+} */
+.custom_weather_wave.-two {
+    animation: drift 7000ms infinite linear;
+    z-index: 2 !important;
+    opacity: 0.2;
+    position: absolute;
+   
+}
+.custom_weather_wave.-three{
+
+    animation: drift 5000ms infinite linear;
+    z-index: 3 !important;
+    opacity: 0.1;
+    position: absolute;
+    
+}
+@keyframes drift{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+
+    }
+}
+@media(max-width:480px){
+    .custom_weather_container { 
+        width: 90%;
+        height: 68%;
+        padding: 0;
+    }
+    h2.custom_weather_location { 
+        font-size: 3rem; 
+        justify-content: center;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px){
+    .custom_weather_container { 
+        width: 90%; 
+    }
+    h2.custom_weather_location { 
+        font-size: 3rem; 
+        justify-content: center;
+    }
+    }
+@media (min-width:768px) and (max-width:1024px){
+        .custom_weather_container { 
+            width: 38%;
+            height: 45%;
+            padding: 0;
+        }
+        h2.custom_weather_location { 
+            font-size: 3rem; 
+            justify-content: center;
+        }
+    }
