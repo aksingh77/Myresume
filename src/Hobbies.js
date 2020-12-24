@@ -11,10 +11,10 @@ const Hobbies = () => {
                 <i className="fas fa-book"></i>
                 <p>reading</p>
             </div>
-            <div className="hobbies">
+            <Link className="hobbies" to="/music"><div>
                 <i className="fas fa-music"></i>
-                <p><Link to="/music"> music</Link></p>
-            </div>
+                <p> music</p>
+            </div></Link>
             <div className="hobbies">
                 <i className="fas fa-futbol"></i>
                 <p>footbal</p>
@@ -23,7 +23,7 @@ const Hobbies = () => {
                 <i className="fas fa-gamepad"></i>
                 <p>gaming</p>
             </div>
-        </div>
+        </div >
     )
 }
 export default Hobbies;

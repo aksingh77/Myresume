@@ -11,14 +11,20 @@
 .hobbies {
     width: calc(100% - 59%);
     float: left;
-    text-align: center;
-    padding: 22px 4px;
-    border: 2.4px solid;
-    border-radius: 10px;
+    text-align: center;  
     margin-bottom: 12px;
+    transition: .5s;
+    position: relative;
+    padding: 37px 4px; 
+    margin-bottom: 2rem; 
+    background: white; 
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); 
 }
 p.view_mode {
     width: 10px;
     height: 10px;
     background: gray;
+}
+.hobbies:hover { 
+    transform: translateY(-10px);
 }
