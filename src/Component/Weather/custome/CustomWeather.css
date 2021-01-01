@@ -16,7 +16,7 @@
     border-radius: 10px;
     padding: 1.9em;
    height: 354px;
-   width: 21%;
+   width: calc(100% - 78%); 
 
    overflow: hidden;
 }
@@ -51,7 +51,7 @@ input.custom_weather_inputfield {
     background: #fff;
     width: 39rem;
     height: 39rem;
-    margin-left: -11rem;
+    margin-left: -10rem;
     margin-top: -9rem;
     transform-origin: 50% 48%;
     border-radius: 43%;
@@ -103,17 +103,17 @@ input.custom_weather_inputfield {
 }
 @media (min-width: 481px) and (max-width: 767px){
     .custom_weather_container { 
-        width: 90%; 
+        width: calc(100% - 50%); 
     }
     h2.custom_weather_location { 
         font-size: 3rem; 
         justify-content: center;
     }
     }
-@media (min-width:768px) and (max-width:1024px){
+@media (min-width:768px) and (max-width:1023px){
         .custom_weather_container { 
-            width: 38%;
-            height: 45%;
+            width: calc(100% - 61%); 
+            height:calc(100% - 40%);
             padding: 0;
         }
         h2.custom_weather_location { 
