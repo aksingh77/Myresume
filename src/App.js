@@ -25,7 +25,7 @@ import { AddUserNav, UserNav } from './Component/menu/DesktopMenu';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           {/* <Route path="/" component={HomePage}/> */}
           {/* or */}

@@ -7,7 +7,7 @@ const CustomWeather = () => {
     const [search, setSearch] = useState("Mumbai");
     useEffect(() => {
         const fetchApi = async () => {
-            const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=b3db72cf8d90309e886d0c8cbf9bee1f`
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=b3db72cf8d90309e886d0c8cbf9bee1f`
             const response = await fetch(url);
             // console.log(response);
             const resJson = await response.json();
