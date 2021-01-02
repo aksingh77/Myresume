@@ -53,7 +53,7 @@ const ViewUser = () => {
         loadUser()
     }, [])
     const loadUser = async () => {
-        const result = await axios.get(`http://localhost:3001/users/${id}`);
+        const result = await axios.get(`https://aksingh77.github.io/myresume/users/${id}`);
         // console.log(result)
         setUser(result.data);
     }
