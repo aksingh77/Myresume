@@ -16,7 +16,7 @@ const ContactHome = () => {
         loadUsers();
     }, []);
     const loadUsers = async () => {
-        const result = await axios.get('http://localhost:3001/users');
+        const result = await axios.get('https://aksingh77.github.io/myresume/users');
         setUsers(result.data);
     }
     const deleteData = async (id) => {
