@@ -53,7 +53,7 @@ const ViewUser = () => {
         loadUser()
     }, [])
     const loadUser = async () => {
-        const result = await axios.get(`https://aksingh77.github.io/myresume/users/${id}`);
+        const result = await axios.get(`https://my-json-server.typicode.com/aksingh77/myresume/users/${id}`);
         // console.log(result)
         setUser(result.data);
     }

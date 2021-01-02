@@ -16,12 +16,12 @@ const ContactHome = () => {
         loadUsers();
     }, []);
     const loadUsers = async () => {
-        const result = await axios.get('https://aksingh77.github.io/myresume/users');
+        const result = await axios.get('https://my-json-server.typicode.com/aksingh77/myresume/users');
         setUsers(result.data);
     }
     const deleteData = async (id) => {
         console.log(id);
-        await axios.delete(`http://localhost:3001/users/${id}`);
+        await axios.delete(`https://my-json-server.typicode.com/aksingh77/myresume/users/${id}`);
         loadUsers()
     }
     return (

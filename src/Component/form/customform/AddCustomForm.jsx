@@ -92,7 +92,7 @@ const AddCustomForm = () => {
     const onSubmit = async (e) => {
 
         e.preventDefault();
-        await axios.post('http://localhost:3001/users', user);
+        await axios.post('https://my-json-server.typicode.com/aksingh77/myresume/users', user);
 
         history.push('/contacthome')
     }

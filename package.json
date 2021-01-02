@@ -33,7 +33,7 @@
     "deploy": "gh-pages -d build",
     "start": "concurrently \"npm startdev\" \"npm run json-server\"",
     "startdev": "react-scripts start",
-    "json-server": "json-server https://aksingh77.github.io/myresume/db.json",
+    "json-server": "npx json-server --watch db.json --port=3001",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
