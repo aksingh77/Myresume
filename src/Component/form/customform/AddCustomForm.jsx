@@ -81,7 +81,6 @@ const AddCustomForm = () => {
         phone: '',
         website: ''
     });
-
     const changeValue = (e) => {
         // console.log(e.target.value);
         setUser({ ...user, [e.target.name]: e.target.value });

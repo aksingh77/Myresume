@@ -89,10 +89,10 @@ const Color = () => {
                 <div className="body_color">
                     <h4>Body Color</h4>
                     <div className="b_color" onChange={setBgColor}>
-                        <lable for="ligh">
+                        <label htmlFor="ligh">
                             <input id="ligh" type="radio" name="body-color" className="body-color" value="light" />Light
-                </lable>
-                        <lable for="ligh">
+                </label>
+                        <lable htmlFor="ligh">
                             <input id="ligh" type="radio" name="body-color" className="body-color" value="dark" />Dark
                 </lable>
                     </div>

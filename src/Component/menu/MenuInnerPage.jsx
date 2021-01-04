@@ -1,4 +1,4 @@
-import { AppBar, Button, Container, Drawer, Hidden, IconButton, List, ListItem, ListItemText, SwipeableDrawer, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, Container, Hidden, IconButton, List, ListItem, ListItemText, SwipeableDrawer, Toolbar, Typography } from '@material-ui/core';
 
 import React, { useState } from 'react';
 import { makeStyles } from "@material-ui/core/styles";

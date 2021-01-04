@@ -17,10 +17,11 @@ import EditCustomForm from './Component/form/customform/EditUser';
 import ViewUser from './Component/form/customform/ViewUser';
 import HomeContactModuleForm from './Component/form/muduleform/HomeContactModuleForm';
 import AddModuleForm from './Component/form/muduleform/AddModuleForm';
-import EditContactForm from './Component/form/muduleform/EditContactForm';
-import ContactNav from './Component/form/customform/ContactNav';
+// import EditContactForm from './Component/form/muduleform/EditContactForm';
+// import ContactNav from './Component/form/customform/ContactNav';
 import MenuInnerPage, { MenuAddPage, MenuViewPage } from './Component/menu/MenuInnerPage';
-import { AddUserNav, UserNav } from './Component/menu/DesktopMenu';
+// import { AddUserNav, UserNav } from './Component/menu/DesktopMenu';
+import CommingSoon from './Component/common/CommingSoon';
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
 
 
           <Route exact path="/music" > <MenuInnerPage /> <Music /> </Route>
-          <Route exact path="/project" > <Project /> </Route>
+          <Route exact path="/project" ><MenuInnerPage /> <Project /> </Route>
           <Route exact path="/musicupdate" > <MenuInnerPage /> <ModuleMusic />
           </Route>
           <Route exact path="/musiccopy" >
@@ -59,7 +60,8 @@ function App() {
           <Route exact path="/user/edit/:id" ><MenuAddPage /><EditCustomForm /></Route>
           <Route exact path="/usermodle" ><HomeContactModuleForm /></Route>
           <Route exact path="/usermodle/add" ><AddModuleForm /></Route>
-          <Route exact path="/usermodle/edit/:id" ><EditContactForm /></Route>
+          <Route exact path="/commingsoon" ><MenuAddPage /><CommingSoon /></Route>
+
         </Switch>
       </BrowserRouter>
     </div>

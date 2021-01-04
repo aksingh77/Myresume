@@ -6,17 +6,17 @@ import { Link } from 'react-router-dom';
 
 
 
-const experiencedata = ({ time, workAs, coName, detail }) => {
+const experiencedata = ({ time, workAs, coName, detail }, id) => {
     // console.log(value);
     return (
 
-        <ExperienceDaa time={time} workAs={workAs} coName={coName} detail={detail} />)
+        <ExperienceDaa key={id} time={time} workAs={workAs} coName={coName} detail={detail} />)
 }
 
 const ExperienceDaa = ({ time, workAs, coName, detail }) => {
     // console.log("the prop si", props);
     return (
-        <div className="e_detail">
+        <div className="e_detail" >
 
             <div className="e_time">
                 <p className="e_detail_work">{time}</p>

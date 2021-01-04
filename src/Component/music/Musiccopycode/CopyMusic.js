@@ -27,7 +27,7 @@ const CopyMusic = () => {
     return (
         <div className="copy_musci_section">
             <div className="copy_music">
-                {console.log(musicData[index].title)}
+                {/* {console.log(musicData[index].title)} */}
                 <div className="music_container">
                     <h2 id="title">{musicData[index].title}</h2>
                     <h3 id="artist">{musicData[index].artist}</h3>

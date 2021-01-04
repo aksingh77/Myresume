@@ -37,9 +37,12 @@ export const loadSong = (musicData) => {
     const title = document.getElementById("title");
     const artist = document.getElementById("artist");
     const musics = document.querySelector('audio');
+    const image = document.querySelector('img');
+
     title.innerText = musicData.title;
     artist.innerText = musicData.artist;
     musics.src = musicData.musicSrc;
+    image.src = musicData.cover;
     // console.log(musics);
 }
 export const prevMusic = () => {

@@ -17,9 +17,9 @@ import Color from './Color';
 
 
 
-const mydetail = ({ icon, data }) => {
+const mydetail = ({ icon, data, link }, id) => {
     return (
-        < Detail icon={icon} data={data} />
+        < Detail key={id} icon={icon} data={data} link={link} />
     )
 }
 
@@ -42,7 +42,7 @@ const HomePage = () => {
                         <span className="homepage_detail_profile">
                             Web Developer
                 </span>
-                        <p className="homepage_detail_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed et molestias obcaecati aliquid quia totam odio quasi doloribus ipsa officia! Deleniti magnam magni neque, tempore maxime minima voluptatibus eos. Ea?</p>
+                        <p className="homepage_detail_content">To work with an organization where I can utilize my potential up to optimum level in achieving the goals or standards set by an organization. I always enjoy working on Web Application Development on PHP and want to do thing practically.</p>
                     </div>
                     <div className="contact_detail">
                         <div className="Contact_heading"><p>Contact</p></div>
@@ -51,12 +51,12 @@ const HomePage = () => {
                     <div className="homepage_skill">
                         <div className="ak">
                             <div className="Contact_heading"><p>skill</p></div>
-                            <Skill icon="fab fa-html5" data="HTML" />
-                            <Skill icon="fab fa-css3-alt" data="CSS" />
-                            <Skill icon="fab fa-react" data="JAVA SCRIPT" />
-                            <Skill icon="fab fa-js" data="REACT" />
-                            <Skill icon="fab fa-sass" data="SASS" />
-                            <Skill icon="fab fa-bootstrap" data="Bootstrap" />
+                            <Skill icon="fab fa-html5" data="HTML" link='/commingsoon' />
+                            <Skill icon="fab fa-css3-alt" data="CSS" link='/commingsoon' />
+                            <Skill icon="fab fa-react" data="JAVA SCRIPT" link='/commingsoon' />
+                            <Skill icon="fab fa-js" data="REACT" link='/commingsoon' />
+                            <Skill icon="fab fa-sass" data="SASS" link='/commingsoon' />
+                            <Skill icon="fab fa-bootstrap" data="Bootstrap" link='/commingsoon' />
 
                         </div>
                     </div>
@@ -73,7 +73,7 @@ const HomePage = () => {
                         <span className="homepage_detail_profile">
                             Web Developer
                 </span>
-                        <p className="homepage_detail_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed et molestias obcaecati aliquid quia totam odio quasi doloribus ipsa officia! Deleniti magnam magni neque, tempore maxime minima voluptatibus eos. Ea?</p>
+                        <p className="homepage_detail_content">To work with an organization where I can utilize my potential up to optimum level in achieving the goals or standards set by an organization. I always enjoy working on Web Application Development on PHP and want to do thing practically.</p>
                     </div>
 
                     <Experience />

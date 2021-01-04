@@ -10,15 +10,20 @@
 }
 
 .copy_musci_section .copy_music {
-  height: 26rem;
-  width: 17rem;
-  margin: 0 auto;
-  text-align: center;
+  
   -webkit-box-shadow: 0 1rem 1.7rem 0.5rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 1rem 1.7rem 0.5rem rgba(0, 0, 0, 0.4);
-  border-radius: 10%;
-  padding: 1.9rem;
-  position: relative;
+          width: 21rem;
+          height: 33rem;
+          background-color: #fff;
+          border-radius: 2rem; 
+          padding: 3rem 1.9rem;
+          text-align: center; 
+          box-sizing: border-box;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -45%);
 }
 
 .copy_musci_section .copy_music #title {

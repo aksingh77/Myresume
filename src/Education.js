@@ -3,10 +3,10 @@ import { education } from './Alldata';
 
 
 
-const educationdata = ({ time, className, collegeName, detail }) => {
+const educationdata = ({ time, className, collegeName, detail }, id) => {
     return (
 
-        <EducationDaa time={time} className={className} collegeName={collegeName} detail={detail} />)
+        <EducationDaa key={id} time={time} className={className} collegeName={collegeName} detail={detail} />)
 }
 
 const EducationDaa = ({ time, className, collegeName, detail }) => {

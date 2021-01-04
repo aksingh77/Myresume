@@ -1,4 +1,4 @@
-import { AppBar, Collapse, Container, List, ListItem, ListItemText, Toolbar, Typography } from '@material-ui/core'
+import { AppBar, Container, List, ListItem, ListItemText, Toolbar, Typography } from '@material-ui/core'
 import React, { useState } from 'react'
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -70,12 +70,12 @@ const DesktopMenu = () => {
 export default DesktopMenu;
 
 export const AddUserNav = () => {
-    const [open, setOpen] = useState(false)
+    // const [open, setOpen] = useState(false)
     const classes = useStyles();
-    const handleClick = () => {
-        console.log('clicked')
-        setOpen(!open);
-    };
+    // const handleClick = () => {
+    //     console.log('clicked')
+    //     setOpen(!open);
+    // };
     return (<>
         <Container>
             <AppBar>
@@ -84,7 +84,7 @@ export const AddUserNav = () => {
                         <Link to="/" className={classes.menulink}>MyResume</Link>
                     </Typography>
                     {addUserData.map(({ title, path }, index) => (
-                        (<Link to={path} className={classes.menulink}> <ListItem button className={classes.desktopmenu_list}>
+                        (<Link key={index} to={path} className={classes.menulink}> <ListItem button className={classes.desktopmenu_list}>
                             <ListItemText primary={title} component={Link} to={path} />
                         </ListItem></Link>)
 
@@ -111,9 +111,9 @@ export const UserNav = () => {
                         <Link to="/" className={classes.menulink}>MyResume</Link>
                     </Typography>
                     {userData.map(({ title, path }, index) => (
-                        (<ListItem button className={classes.desktopmenu_list}>
-                            <Link to={path} className={classes.menulink}><ListItemText primary={title} component={Link} to={path} /></Link>
-                        </ListItem>)
+                        (<Link to={path} className={classes.menulink}> <ListItem key={index} button className={classes.desktopmenu_list}>
+                            <ListItemText primary={title} component={Link} to={path} />
+                        </ListItem></Link>)
 
 
 

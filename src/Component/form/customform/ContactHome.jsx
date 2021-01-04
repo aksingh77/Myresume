@@ -40,14 +40,14 @@ const ContactHome = () => {
                 </thead>
                 <tbody>
                     {users.map((user, index) => (
-                        <tr>
+                        <tr key={user.id}>
                             <th key={index + 1} scope="row">{index + 1}</th>
                             <td>{user.name}</td>
                             <td>{user.username}</td>
                             <td>{user.email}</td>
                             <td><Link to={`/user/view/${user.id}`}><VisibilityIcon color="primary" /></Link>
                                 <Link to={`/user/edit/${user.id}`}><EditIcon /></Link>
-                                <Link onClick={() => deleteData(user.id)}><DeleteIcon color="secondary" /></Link>
+                                <Link to="" onClick={() => deleteData(user.id)}><DeleteIcon color="secondary" /></Link>
                             </td>
                         </tr>
                     ))}
