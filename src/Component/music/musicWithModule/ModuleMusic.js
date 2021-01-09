@@ -15,7 +15,7 @@ import { Link } from '@material-ui/core';
 const ModuleMusic = () => {
     return (
         <div className="moudule_music">
-            <Link to='/mongoformdata'></Link>
+
             <ReactJkMusicPlayer audioLists={musicData} autoPlay={false} />
         </div>
 
