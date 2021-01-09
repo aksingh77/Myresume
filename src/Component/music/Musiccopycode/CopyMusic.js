@@ -28,7 +28,7 @@ const CopyMusic = () => {
     return (
         <div className="copy_musci_section">
             <div className="copy_music">
-                <Link to='/mongoformdata'></Link>
+                <Link to='/mongoformdata'>checking</Link>
                 {/* {console.log(musicData[index].title)} */}
                 <div className="music_container">
                     <h2 id="title">{musicData[index].title}</h2>
