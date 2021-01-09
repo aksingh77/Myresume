@@ -7,9 +7,11 @@ import menu, { addUserData, userData } from './menudata';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import { Link } from 'react-router-dom';
-const useStyles = makeStyles(() => ({
+import { useRef } from 'react';
+const useStyles = makeStyles((theme) => ({
     desktopmenu: {
-        display: 'flex'
+        display: 'flex',
+
     },
     desktopmenu_list: {
         width: 'auto'
@@ -18,7 +20,12 @@ const useStyles = makeStyles(() => ({
         flex: '1'
     },
     menulink: {
-        color: '#fff'
+        color: '#fff',
+        [theme.breakpoints.down('xs')]: {
+            flexDirection: `column`,
+            justifyContent: `unset`,
+            width: 240
+        }
     }
 }))
 
@@ -26,10 +33,19 @@ const useStyles = makeStyles(() => ({
 const DesktopMenu = () => {
     const [open, setOpen] = useState(false)
     const classes = useStyles();
-    const handleClick = () => {
-        console.log('clicked')
+    const anchorRef = useRef(null)
+    const handleOpen = (event) => {
+        console.log(event.target)
         setOpen(!open);
+        console.log(anchorRef)
     };
+    const handleClose = (event) => {
+        if (anchorRef.current && anchorRef.current.contains(event.target)) {
+            return;
+        }
+
+        setOpen(false);
+    }
 
     // onMouseEnter={() => setOpen(true)}
     //   onMouseLeave={() => setOpen(false)};
@@ -44,7 +60,7 @@ const DesktopMenu = () => {
                         <List key={index} className={classes.desktopmenu}>
 
                             {musicMenu != null ? (
-                                <ListItem key={index} onClick={{ musicMenu } && handleClick} className={classes.desktopmenu_list}>
+                                <ListItem key={index} onClick={handleOpen} className={classes.desktopmenu_list}>
                                     <ListItemText key={index} primary={title} />
 
                                     {open ? <ExpandLess /> : <ExpandMore />}

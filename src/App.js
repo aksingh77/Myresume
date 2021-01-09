@@ -22,6 +22,9 @@ import AddModuleForm from './Component/form/muduleform/AddModuleForm';
 import MenuInnerPage, { MenuAddPage, MenuViewPage } from './Component/menu/MenuInnerPage';
 // import { AddUserNav, UserNav } from './Component/menu/DesktopMenu';
 import CommingSoon from './Component/common/CommingSoon';
+import FormValidation from './Component/form/validateform/FormValidation';
+import MonogValidationForm from './Component/form/mongoform/MongoValidationForm';
+import ShowData from './Component/form/mongoform/ShowData';
 
 function App() {
   return (
@@ -61,6 +64,9 @@ function App() {
           <Route exact path="/usermodle" ><HomeContactModuleForm /></Route>
           <Route exact path="/usermodle/add" ><AddModuleForm /></Route>
           <Route exact path="/commingsoon" ><MenuAddPage /><CommingSoon /></Route>
+          <Route exact path="/formValidation" ><MenuAddPage /><FormValidation /></Route>
+          <Route exact path="/mongoformdata" ><MenuAddPage /><MonogValidationForm /></Route>
+          <Route exact path="/mongoformdata/view" ><MenuAddPage /><ShowData /></Route>
 
         </Switch>
       </BrowserRouter>

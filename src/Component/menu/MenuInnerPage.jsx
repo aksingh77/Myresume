@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
             justifyContent: `unset`,
             width: 240
         }
-    }
+    }, new_drawer: { flexDirection: "column" }
 
 }))
 
@@ -62,7 +62,7 @@ const MenuInnerPage = () => {
                                     <ListItem key={i} button onClick={() => setOpen(false)} component={Link} to={path}> <ListItemText primary={title} /> </ListItem>
                                 ))}
                             </List>
-                            {/* <DesktopMenu className={classes.drawer} /> */}
+                            {/* <DesktopMenu className={classes.newmenu} /> */}
                         </SwipeableDrawer>
                     </Hidden>
                     <Typography variant="h6" className={classes.title} >

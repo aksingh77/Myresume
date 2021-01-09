@@ -6,7 +6,7 @@ const ContactForm = () => {
     const { register, errors, handleSubmit } = useForm({
         mode: 'onTouched'
     });
-    const onSubmit = data => console.log(data);
+    const onSubmit = (data) => console.log(data);
     return (
         <div className="module_form_section">
             <div className="module_form_container">

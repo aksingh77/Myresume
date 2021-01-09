@@ -1,0 +1,10 @@
+.view_page{
+
+    max-width:650px;
+    margin: 0 auto;
+
+    margin-top: 1rem;
+}
+th.MuiTableCell-root.MuiTableCell-head {
+    font-weight: 600;
+}

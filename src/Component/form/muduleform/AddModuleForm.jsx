@@ -13,8 +13,12 @@ const AddModuleForm = () => {
 
 
     const onSubmit = async (data) => {
+      try {
         await axios.post('http://localhost:3001/users', data);
         history.push("/contacthome")
+      } catch (error) {
+          console.log(error.message)
+      }
     };
     return (
         <div className="module_form_section">

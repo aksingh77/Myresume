@@ -33,6 +33,8 @@ const HomePage = () => {
                         <Color />
                     </div>
                 </div>
+
+
                 <div className="left_side">
                     <div className="homepage_img">
                         <img src={Myimg} alt="Myimage" />

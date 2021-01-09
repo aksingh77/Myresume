@@ -1,0 +1,23 @@
+.pt-4, .py-4 {
+    padding-top: 1.5rem!important;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.m-auto {
+    margin: auto!important;
+}
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.container {
+    max-width: calc(100% - 30%);
+    margin: auto;
+}.background {
+    background: #b4b7c8;
+    padding: 30px;
+}
