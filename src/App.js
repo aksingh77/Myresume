@@ -29,7 +29,7 @@ import ShowData from './Component/form/mongoform/ShowData';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <Switch>
           {/* <Route path="/" component={HomePage}/> */}
           {/* or */}
