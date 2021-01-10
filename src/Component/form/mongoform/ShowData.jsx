@@ -14,7 +14,7 @@ const ShowData = () => {
     }, [])
     const loadUser = async () => {
 
-        const result = await axios.get("http://localhost:30001/viewdata");
+        const result = await axios.get(" http://localhost:30001/viewdata");
         console.log(result)
         setUser(result.data)
     }

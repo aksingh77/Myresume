@@ -15,13 +15,7 @@ const menu = [{ path: "/", title: "Home" },
     //     { path: "/customweatherr", title: "Temprature" }
     // ]
 },
-{
-    path: "/mongoformdata", title: "testing",
-    // musicMenu: [
-    //     { path: "/customweatherr", title: "Temprature" },
-    //     { path: "/customweatherr", title: "Temprature" }
-    // ]
-}
+
 ]
 
 export default menu;
