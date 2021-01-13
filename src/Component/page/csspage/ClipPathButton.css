@@ -1,0 +1,51 @@
+.clippathbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    min-height: 100vh;
+    background: #43345d;
+}
+.anchortag{
+    position: relative;
+    display: inline-block;
+    width: 260px;
+    height: 70px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.24);
+}
+.anchortag span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: #6c4ba5;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+    letter-spacing: 2px;
+    font-size: 1.9rem;
+}
+.anchortag span:nth-child(2){
+    color: #6c4ba5;
+    background: #fff;
+    overflow: hidden;
+    z-index: 2;
+    transition: 0.4s;
+    /* clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 26% 50%); */
+    clip-path: polygon(50% 0, 26% 50%, 50% 100%, 100% 100%, 100% 0);
+
+}
+.anchortag span:nth-child(2):hover{
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 50%); */
+    clip-path: polygon(0 0, 0 50%, 0 100%, 100% 100%, 100% 0);
+
+}
+
+.anchortag span:nth-child(1):hover ~ span:nth-child(2){
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 100% 100%, 100% 0);
+
+
+
+}

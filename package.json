@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:30001/add",
+  "homepage": "https://aksingh77.github.io/myresume/",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
@@ -32,7 +33,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "startdev": "concurrently \"npm start\" \"npm run json-server\"",
+    "startdev": "concurrently \"npm start\" \"nodemon server.js\"",
     "json-server": "https://my-json-server.typicode.com/aksingh77/myresume/db",
     "build": "react-scripts build",
     "test": "react-scripts test",
